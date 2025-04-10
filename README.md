@@ -1,7 +1,7 @@
 # Logstash Project
 
 ## Overview
-This project demonstrates my ability to configure Logstash for ingesting and parsing security log data. It includes a configuration to transform syslog-style logs into structured JSON.
+This project showcases the configuration of Logstash to ingest, parse, and normalize security log data. It includes a custom Logstash pipeline that transforms syslog-formatted logs into structured JSON, enabling easier analysis and integration with downstream security tools.
 
 ---
 
