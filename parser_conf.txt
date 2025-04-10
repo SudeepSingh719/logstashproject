@@ -1,0 +1,44 @@
+input {
+  file {
+    path => "/home/sudeep/logstash-project/input.log"
+    start_position => "beginning"
+    sincedb_path => "/dev/null"
+  }
+}
+filter {
+  if [message] == "" {
+   drop {}
+ }
+
+  grok {
+    match => {
+      "message" => [
+        '<%{INT}>%{INT} %{DATA:time} %{WORD:princiapl_hostname} %{WORD:application_name} %{INT:process_id} - - alertname=\"%{DATA:description}\" computername=\"%{DATA:source_hostname}\" computerip=\"%{IP:source_ip}\" severity=%{GREEDYDATA:severity}'
+      ]
+    }
+  }
+
+ mutate {
+  remove_field => ["host", "log", "event"]
+ }
+
+  if [severity] != "" {
+    if [severity] =~ "1" {
+      mutate { replace => { "severity" => "High" } }
+    } else if [severity] =~ "2" {
+      mutate { replace => { "severity" => "Medium" } }
+    } else if [severity] =~ "3" {
+      mutate { replace => { "severity" => "Low" } }
+    } else if [severity] =~ "4" {
+      mutate { replace => { "severity" => "Info" } }
+    } else {
+      mutate { replace => { "severity" => "Unknown" } }
+    }
+  }
+}
+  output {
+    file {
+      path => "/home/sudeep/logstash-project/output.json"
+      codec => json_lines
+    }
+}
