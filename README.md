@@ -6,11 +6,11 @@ This project demonstrates my ability to configure Logstash for ingesting and par
 ---
 
 ## Project Structure
+- `README.md`: This file — describes the approach and configuration.
 - `input_log.txt`: Contains the raw security syslog log samples.
 - `output.json`: Sample output from Logstash showing the normalized JSON structure.
 - `output_formatted.json`: sample output from logstash in formatted JSON structure for better understanding
 - `parser_conf.txt`: The Logstash configuration file used to parse and normalize logs.
-- `README.md`: This file — describes the approach and configuration.
 
 ---
 
