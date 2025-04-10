@@ -1,0 +1,69 @@
+{
+  "message": "<14>1 2016-12-25T09:03:52.754646-06:00 acmeinchost1 antivirus 2496 - - alertname=\"Virus Found\" computername=\"acmeincpc42\" computerip=\"10.58.194.142\" severity=\"1\"",
+  "princiapl_hostname": "acmeinchost1",
+  "source_hostname": "acmeincpc42",
+  "source_ip": "10.58.194.142",
+  "process_id": "2496",
+  "severity": "High",
+  "time": "2016-12-25T09:03:52.754646-06:00",
+  "description": "Virus Found",
+  "@version": "1",
+  "application_name": "antivirus",
+  "@timestamp": "2025-04-10T05:14:08.761731113Z"
+}
+
+{
+  "message": "<14>1 2025-04-10T11:25:30.789123+05:30 acmeinchost4 antivirus 2234 - - alertname=\"Ransomware Blocked\" computername=\"acmeincpc91\" computerip=\"10.10.1.89\" severity=\"2\"",
+  "princiapl_hostname": "acmeinchost4",
+  "source_hostname": "acmeincpc91",
+  "source_ip": "10.10.1.89",
+  "process_id": "2234",
+  "severity": "Medium",
+  "time": "2025-04-10T11:25:30.789123+05:30",
+  "description": "Ransomware Blocked",
+  "@version": "1",
+  "application_name": "antivirus",
+  "@timestamp": "2025-04-10T05:14:08.780141584Z"
+}
+
+{
+  "message": "<14>1 2025-04-10T11:05:13.654321+05:30 acmeinchost3 antivirus 4125 - - alertname=\"Malware Quarantined\" computername=\"acmeincpc88\" computerip=\"10.10.1.67\" severity=\"3\"",
+  "princiapl_hostname": "acmeinchost3",
+  "source_hostname": "acmeincpc88",
+  "source_ip": "10.10.1.67",
+  "process_id": "4125",
+  "severity": "Low",
+  "time": "2025-04-10T11:05:13.654321+05:30",
+  "description": "Malware Quarantined",
+  "@version": "1",
+  "application_name": "antivirus",
+  "@timestamp": "2025-04-10T05:14:08.778644794Z"
+}
+
+{
+  "message": "<14>1 2025-04-10T11:47:59.456987+05:30 acmeinchost5 antivirus 1987 - - alertname=\"Spyware Detected\" computername=\"acmeincpc23\" computerip=\"10.10.1.12\" severity=\"4\"",
+  "princiapl_hostname": "acmeinchost5",
+  "source_hostname": "acmeincpc23",
+  "source_ip": "10.10.1.12",
+  "process_id": "1987",
+  "severity": "Info",
+  "time": "2025-04-10T11:47:59.456987+05:30",
+  "description": "Spyware Detected",
+  "@version": "1",
+  "application_name": "antivirus",
+  "@timestamp": "2025-04-10T05:14:08.780589381Z"
+}
+
+{
+  "message": "<14>1 2025-04-10T12:15:42.321654+05:30 acmeinchost6 antivirus 2764 - - alertname=\"Potentially Unwanted Program\" computername=\"acmeincpc55\" computerip=\"10.10.1.78\" severity=\"5\"",
+  "princiapl_hostname": "acmeinchost6",
+  "source_hostname": "acmeincpc55",
+  "source_ip": "10.10.1.78",
+  "process_id": "2764",
+  "severity": "Unknown",
+  "time": "2025-04-10T12:15:42.321654+05:30",
+  "description": "Potentially Unwanted Program",
+  "@version": "1",
+  "application_name": "antivirus",
+  "@timestamp": "2025-04-10T05:14:08.781012378Z"
+}
